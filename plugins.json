@@ -107,17 +107,18 @@
     ]
   },
   {
-    "name": "playwright",
+    "name": "renderer",
     "type": "module",
     "author": "ElainaBot",
-    "description": "异步 Playwright 浏览器渲染, 支持 URL/HTML 截图与 PDF 导出",
-    "version": "1.1.0",
+    "description": "渲染引擎: PIL 子进程渲染池 + Playwright 浏览器渲染统一管理, 全局共享按需启停",
+    "version": "2.0.0",
     "category": "服务",
     "github": "https://github.com/ElainaCore/ElainaBot_v2",
     "branch": "main",
     "tags": [
       "渲染",
       "截图",
+      "PIL",
       "Playwright"
     ]
   },
@@ -375,7 +376,7 @@
       "群管"
     ]
   },
-   {
+  {
     "name": "AstrBot基座",
     "type": "complete",
     "author": "冷曦",
@@ -385,7 +386,11 @@
     "github": "https://github.com/lengxi-root/elaina-plugins-lengxi",
     "branch": "main",
     "path": "astr基座",
-    "tags": ["AstrBot", "适配", "工具"]
+    "tags": [
+      "AstrBot",
+      "适配",
+      "工具"
+    ]
   },
   {
     "name": "ElainaBot 早柚适配器",
@@ -398,7 +403,7 @@
     "branch": "main",
     "tags": [
       "系统",
-      "适配", 
+      "适配",
       "工具"
     ]
   },
@@ -411,7 +416,11 @@
     "category": "群管",
     "github": "https://github.com/miaolik/plugin-wjc",
     "branch": "main",
-    "tags": ["违禁词", "群管", "工具"]
+    "tags": [
+      "违禁词",
+      "群管",
+      "工具"
+    ]
   },
   {
     "name": "关键词回复",
@@ -422,7 +431,11 @@
     "category": "群管",
     "github": "https://github.com/miaolik/plugin-gjc",
     "branch": "main",
-    "tags": ["关键词", "群管", "工具"]
+    "tags": [
+      "关键词",
+      "群管",
+      "工具"
+    ]
   },
   {
     "name": "腾讯频道",
@@ -433,7 +446,11 @@
     "category": "Skill",
     "github": "https://github.com/miaolik/txpd",
     "branch": "main",
-    "tags": ["Skill", "频道", "工具"]
+    "tags": [
+      "Skill",
+      "频道",
+      "工具"
+    ]
   },
   {
     "name": "QG词库",
@@ -444,9 +461,13 @@
     "category": "词库",
     "github": "https://github.com/miaolik/plugin-ck",
     "branch": "main",
-    "tags": ["词库", "群管", "工具"]
+    "tags": [
+      "词库",
+      "群管",
+      "工具"
+    ]
   },
-    {
+  {
     "name": "玄天虾虾",
     "type": "complete",
     "author": "baiyifei61-cmd",
@@ -455,7 +476,11 @@
     "category": "娱乐",
     "github": "https://github.com/baiyifei61-cmd/xyg-plugin",
     "branch": "main",
-    "tags": ["游戏", "谐音梗", "答题"]
+    "tags": [
+      "游戏",
+      "谐音梗",
+      "答题"
+    ]
   },
   {
     "name": "系统状态",
@@ -466,7 +491,12 @@
     "category": "工具",
     "github": "https://github.com/MilkNiuNai/Elainabot_System-Status",
     "branch": "main",
-    "tags": ["系统", "磁盘", "CPU", "内存"]
+    "tags": [
+      "系统",
+      "磁盘",
+      "CPU",
+      "内存"
+    ]
   },
   {
     "name": "wechat-bot",
@@ -477,6 +507,9 @@
     "category": "分类",
     "github": "https://github.com/linxi-root/wechat-bot",
     "branch": "main",
-    "tags": ["微信ClawBot", "工具"]
+    "tags": [
+      "微信ClawBot",
+      "工具"
+    ]
   }
 ]
