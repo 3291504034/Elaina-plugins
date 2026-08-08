@@ -98,8 +98,9 @@
     "description": "MySQL + Redis 统一数据存储模块, 异步连接池与完整 CRUD / 缓存操作",
     "version": "1.1.0",
     "category": "服务",
-    "github": "https://github.com/ElainaCore/ElainaBot_v2",
+    "github": "https://github.com/ElainaCore/Elainabot_v2-modules",
     "branch": "main",
+    "path": "datastore",
     "tags": [
       "数据库",
       "MySQL",
@@ -113,8 +114,9 @@
     "description": "渲染引擎: PIL 子进程渲染池 + Playwright 浏览器渲染统一管理, 全局共享按需启停",
     "version": "2.0.0",
     "category": "服务",
-    "github": "https://github.com/ElainaCore/ElainaBot_v2",
+    "github": "https://github.com/ElainaCore/Elainabot_v2-modules",
     "branch": "main",
+    "path": "renderer",
     "tags": [
       "渲染",
       "截图",
@@ -129,8 +131,9 @@
     "description": "OneBot 11 协议适配器, 将消息/事件推送到外部机器人框架",
     "version": "2.0.0",
     "category": "适配器",
-    "github": "https://github.com/ElainaCore/ElainaBot_v2",
+    "github": "https://github.com/ElainaCore/Elainabot_v2-modules",
     "branch": "main",
+    "path": "onebot_adapter",
     "tags": [
       "OneBot",
       "适配器",
@@ -510,6 +513,24 @@
     "tags": [
       "微信ClawBot",
       "工具"
+    ]
+  },
+  {
+    "name": "ai_llm",
+    "type": "module",
+    "author": "ElainaBot",
+    "description": "统一管理 OpenAI 兼容接口、模型优先级、自动故障切换以及 Agent、MCP、Skills 和计划任务",
+    "version": "1.0.0",
+    "category": "服务",
+    "github": "https://github.com/ElainaCore/Elainabot_v2-modules",
+    "branch": "main",
+    "path": "ai_llm",
+    "tags": [
+      "AI",
+      "LLM",
+      "Agent",
+      "MCP",
+      "服务"
     ]
   }
 ]
