@@ -9,27 +9,27 @@ ElainaBot 官方插件与模块市场 — 在这里发现和分享插件/模块
 
 </div>
 
-## AI LLM Agent 下载清单
+## AI LLM 模型工具清单
 
-AI LLM Agent 使用仓库根目录的 `agents.json` 作为下载清单。AI LLM 服务会复用框架的 GitHub 镜像设置下载并安装清单中的 Agent。
+AI LLM 使用仓库根目录的 `tools.json` 作为模型工具清单。服务会复用框架的 GitHub 镜像设置下载并安装清单中的工具。
 
-Agent 支持两种发布形式：
+模型工具支持两种发布形式：
 
 - `file`：`path` 指向一个独立 `.py` 文件。
-- `folder`：`path` 指向一个完整文件夹，文件夹根目录必须包含 `agent.py`；同目录内可放置相对导入模块、静态数据和资源文件。
+- `folder`：`path` 指向一个完整文件夹，文件夹根目录必须包含 `tool.py`；同目录内可放置相对导入模块、静态数据和资源文件。
 
-每个 Agent 的入口必须声明静态 `AGENT` 字典，并提供 `run(arguments, context)` 函数。清单中的 `id` 必须与入口文件内 `AGENT['id']` 完全一致。
+每个模型工具的入口必须声明静态 `TOOL` 字典，并提供 `run(arguments, context)` 函数。清单中的 `id` 必须与入口文件内 `TOOL['id']` 完全一致。
 
 ```json
 {
   "id": "example",
-  "name": "示例 Agent",
+  "name": "示例模型工具",
   "author": "作者",
   "description": "说明模型应该在什么情况下调用。",
   "version": "1.0.0",
   "github": "https://github.com/user/repository",
   "branch": "main",
-  "path": "agents/example",
+  "path": "tools/example",
   "type": "folder",
   "tags": ["工具"]
 }
