@@ -9,6 +9,34 @@ ElainaBot 官方插件与模块市场 — 在这里发现和分享插件/模块
 
 </div>
 
+## AI LLM Agent 下载清单
+
+AI LLM Agent 使用仓库根目录的 `agents.json` 作为下载清单。AI LLM 服务会复用框架的 GitHub 镜像设置下载并安装清单中的 Agent。
+
+Agent 支持两种发布形式：
+
+- `file`：`path` 指向一个独立 `.py` 文件。
+- `folder`：`path` 指向一个完整文件夹，文件夹根目录必须包含 `agent.py`；同目录内可放置相对导入模块、静态数据和资源文件。
+
+每个 Agent 的入口必须声明静态 `AGENT` 字典，并提供 `run(arguments, context)` 函数。清单中的 `id` 必须与入口文件内 `AGENT['id']` 完全一致。
+
+```json
+{
+  "id": "example",
+  "name": "示例 Agent",
+  "author": "作者",
+  "description": "说明模型应该在什么情况下调用。",
+  "version": "1.0.0",
+  "github": "https://github.com/user/repository",
+  "branch": "main",
+  "path": "agents/example",
+  "type": "folder",
+  "tags": ["工具"]
+}
+```
+
+字段要求：`id` 只能使用小写字母、数字、下划线和连字符，并以字母开头；`github` 必须是 GitHub 仓库地址；`branch` 默认为 `main`；`path` 不能包含绝对路径或 `..` 路径；`type` 只能是 `file` 或 `folder`。
+
 ## 🔌 如何提交插件
 
 ### 第一步：准备你的插件仓库
