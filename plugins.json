@@ -532,5 +532,23 @@
       "MCP",
       "服务"
     ]
+  },
+  {
+    "name": "AI聊天陪伴",
+    "type": "complete",
+    "author": "ElainaBot",
+    "description": "人格聊天陪伴插件，支持用户独立上下文、长期记忆、Skills、内容审核、Meme、生图旁路与 Web 面板",
+    "version": "1.1.1",
+    "category": "AI",
+    "github": "https://github.com/lengxi-plugins/elaina",
+    "branch": "main",
+    "path": "ElainaBot_v2/AI聊天陪伴",
+    "tags": [
+      "AI",
+      "聊天",
+      "陪伴",
+      "人格",
+      "Skills"
+    ]
   }
 ]
