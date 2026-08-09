@@ -536,7 +536,7 @@
   {
     "name": "AI聊天陪伴",
     "type": "complete",
-    "author": "ElainaBot",
+    "author": "冷曦",
     "description": "人格聊天陪伴插件，支持用户独立上下文、长期记忆、Skills、内容审核、Meme、生图旁路与 Web 面板",
     "version": "1.1.1",
     "category": "AI",
