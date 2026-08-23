@@ -70,17 +70,5 @@
     "branch": "main",
     "path": "onebot_amsghook",
     "tags": ["OneBot", "消息拦截", "官方机器人"]
-  },
-  {
-    "name": "QQ 抢红包",
-    "type": "complete",
-    "author": "3122662728 / 冷曦",
-    "description": "基于内置 QQ 原生协议的可配置红包领取插件，支持策略、延迟、统计和 Web 面板",
-    "version": "1.1.1",
-    "category": "娱乐",
-    "github": "https://github.com/lengxi-root/elaina-plugins-lengxi",
-    "branch": "main",
-    "path": "onebot_red_packet",
-    "tags": ["OneBot", "红包", "自动化"]
   }
 ]
