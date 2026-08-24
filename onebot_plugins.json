@@ -64,7 +64,7 @@
     "type": "complete",
     "author": "冷曦",
     "description": "拦截插件发起的 OneBot 出站消息，支持规则变换和 QQ 官方机器人代发",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "category": "工具",
     "github": "https://github.com/lengxi-root/elaina-plugins-lengxi",
     "branch": "main",
