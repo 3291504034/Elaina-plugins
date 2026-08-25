@@ -103,6 +103,8 @@ __plugin_meta__ = {
 
 #### 字段说明
 
+市场每小时读取插件源码中的静态版本声明，并且只在源码版本高于市场版本时更新 `version`。默认检查 `path` 指向的文件，或插件目录下的 `main.py`、`index.py`、`app.py`、`__init__.py`、`package.json`、`pyproject.toml`；不会执行远程代码，也不会自动降级。
+
 | 字段 | 必填 | 说明 |
 |------|------|------|
 | `name` | ✅ | 名称, 安装后的目录名 (`plugins/<name>` 或 `modules/<name>`) |
@@ -115,6 +117,8 @@ __plugin_meta__ = {
 | `branch` | ❌ | 分支名，默认 `main` |
 | `path` | ❌ | 仓库内路径 (字符串)：一个文件，或一个子目录。指向子目录时会下载该目录下**全部**文件 (含 html 等附属文件)。`complete` 用它选一仓多插件里的某个子目录；`single` 用它指向单文件或其所在子目录 |
 | `alone` | ❌ | `single` 专用：默认 `true` 装到共享 `plugins/alone/<name>.py` (仅单文件)；显式 `false` 时装到专属目录 `plugins/<name>/` (支持多文件，用 `path` 指向子目录整目录下载) |
+| `auto_update_version` | ❌ | 是否参与每小时源码版本同步，默认 `true`；设为 `false` 可退出自动版本更新 |
+| `version_source` | ❌ | 版本声明文件的仓库内相对路径；默认入口无法唯一确定版本时设置，支持 `.py`、`.json`、`.toml` |
 | `tags` | ❌ | 标签数组，用于搜索 |
 
 > **独立插件要下多个文件 (如 .py + .html)？** 把这几个文件放进仓库的同一个子目录，然后 `alone: false` + `path` 指向该子目录 (或目录下任一文件)，安装时整个子目录会一起下到 `plugins/<name>/`。
