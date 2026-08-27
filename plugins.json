@@ -482,7 +482,7 @@
     "type": "complete",
     "author": "miaolik",
     "description": "词库编写，新手入门, Web 后台",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "category": "词库",
     "github": "https://github.com/miaolik/plugin-ck",
     "branch": "main",
